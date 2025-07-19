@@ -7,7 +7,7 @@ s-3: verify to the pin number
 
 */
 
-
+// cash in part
 document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
     
@@ -27,8 +27,30 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     else{
         alert('Failed to add money ! Try again.')
     }
+   
+})
 
+// cash out part
+document.getElementById('btn-cah-out').addEventListener('click', function (event) {
+    event.preventDefault();
 
+    const cashOutAmount = document.getElementById('cash-out-add-money').value ;
+    const cashOutMoney = parseFloat(cashOutAmount);
+
+    const cashOutPin = document.getElementById('cash-out-pin').value ;
+
+    if (cashOutPin === '1234') {
+        const wallet = document.getElementById('my-amount').innerText;
+        const walletMoney =parseFloat(wallet);
+
+        const updateAmount = walletMoney - cashOutMoney;
+        document.getElementById('my-amount').innerText = updateAmount;
+
+    }
+    else{
+        alert('Wrong pin number ! please try again later')
+    }
     
     
 })
+

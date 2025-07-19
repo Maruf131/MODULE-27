@@ -31,7 +31,7 @@
                     </div>
                     <div class="divider"></div>
                     <!-- login form part  -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -50,6 +50,27 @@
                             </div>
                         </form>
                     </div>
+                    <!-- cash out part -->
+                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold text-lg">Amount</span>
+                                </label>
+                                <input id="cash-out-add-money" type="text" placeholder="Your Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold text-lg">PIN</span>
+                                </label>
+                                <input id="cash-out-pin" type="password" placeholder="PIN number" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-cah-out" class="btn btn-primary font-bold text-lg">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
